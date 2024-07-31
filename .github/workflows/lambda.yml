@@ -27,12 +27,8 @@ jobs:
       - name: 'Upload Lambda ZIP File'
         run: |
            mkdir -p ./lambda-dynamodb/lambda
-              if [ -r ${{ vars.filename }} ]; then
-                cp ${{ vars.filename }} ./lambda-dynamodb/lambda/todoexpress.zip
-              else
-                echo "File is not readable: ${{ vars.filename }}"
-                exit 1
-              fi
+           cp C:/Users/ajush/Desktop/version2-express-todo/todoexpress.zip.zip ./lambda-dynamodb/lambda/todoexpress.zip
+           
       - name: 'Terraform Init'
         run: terraform init
         working-directory: ./lambda-dynamodb/lambda
