@@ -5,5 +5,5 @@ variable "region" {
 
 variable "filename" {
   description = "Path to the zip file"
-  default     = "C:/Users/ajush/Desktop/version2-express-todo/todoexpress.zip.zip"
+  default     = "./todoexpress.zip.zip"
 }
