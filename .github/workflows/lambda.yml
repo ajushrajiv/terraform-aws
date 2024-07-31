@@ -27,7 +27,7 @@ jobs:
       - name: 'Upload Lambda ZIP File'
         run: |
            mkdir -p ./lambda-dynamodb/lambda
-           cp C:/Users/ajush/Desktop/version2-express-todo/todoexpress.zip.zip ./lambda-dynamodb/lambda/todoexpress.zip
+           cp ./lambda-dynamodb/lambda/todoexpress.zip.zip ./lambda-dynamodb/lambda/todoexpress.zip
            
       - name: 'Terraform Init'
         run: terraform init
