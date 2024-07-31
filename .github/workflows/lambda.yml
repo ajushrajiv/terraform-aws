@@ -26,20 +26,20 @@ jobs:
 
       - name: 'Terraform Init'
         run: terraform init
-        working-directory: ./ec2/lambda-dynamodb/lambda
+        working-directory: ./lambda-dynamodb/lambda
 
       - name: 'Terraform Format'
         run: terraform fmt --check
-        working-directory: ./ec2/lambda-dynamodb/lambda
+        working-directory: ./lambda-dynamodb/lambda
 
       - name: 'Terraform Validate'
         run: terraform validate
-        working-directory: ./ec2/lambda-dynamodb/lambda
+        working-directory: ./lambda-dynamodb/lambda
 
       - name: 'Terraform Plan'
         run: terraform plan
-        working-directory: ./ec2/lambda-dynamodb/lambda
+        working-directory: ./lambda-dynamodb/lambda
 
       - name: 'Terraform Apply'
         run: terraform apply -auto-approve
-        working-directory: ./ec2/lambda-dynamodb/lambda
+        working-directory: ./lambda-dynamodb/lambda
